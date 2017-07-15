@@ -10,17 +10,25 @@ body{
 }
 a{
 	text-decoration:none;
+	color:black;
 }
 a:link{
 	text-decoration:none;
+		color:black;
+
 }
 a:visited{
 	text-decoration:none;
+		color:black;
+
 }
 a:hover{
 	background-color:#223850;
 	color:white;
 
+}
+ul{
+	list-style:none;
 }
 h1{
  font-family: Verdana,Arial,sans-serif;

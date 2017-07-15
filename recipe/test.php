@@ -26,24 +26,30 @@ body{
 </head>
 <body>
 <div id="wrapper">
-<h1>Data records stored in the recipe database</h1><hr>
-<?php include "login.inc.php"; 
-$query = "SELECT title, poster, shortdesc FROM recipes";
-$result = mysqli_query($dbc, $query);
-echo "<div id='test'>";
-while($row=mysqli_fetch_array($result, MYSQLI_ASSOC))
-{
-	$title = $row['title'];
-	$poster = $row['poster'];
-	$shortdesc = $row['shortdesc'];
 
-	echo "<b>Title: &nbsp; &nbsp;&nbsp;&nbsp;</b> $title<br>";
-	echo "<b>posted by: </b> $poster<br>";
-	echo "$shortdesc<br><br>";
-}
+<h2>Test Page</h2>
+<input type="submit" value="submit">
+<div style="max-width:75% margin:auto; border:1px solid #444; background-color:white">
+<?php 
+include "login.inc.php";
+$date = date("Y-m-d");
+
+$title = "title goes here";
+$article = "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>";
+$query= "INSERT INTO news (date, title, article) VALUES ($date, $title, $article)";
+$result = mysqli_query($dbc, $query);
+echo "$result";
+
+
+
+
 ?>
-<a href="index.php"><button>Back</button></a>
+
+
+
+
 </div>
+
 </div>
 </body>
 </html>
