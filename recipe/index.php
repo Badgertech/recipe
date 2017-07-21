@@ -15,7 +15,7 @@
 	<div id="nav">
 		<?php include "nav.inc.php"; ?>
 	</div>
-	
+
 	<div id="main">
 		<?php 
 			if(!isset($_REQUEST['content']))
@@ -28,6 +28,7 @@
 			}
 ?>
 	</div>
+
 	<div id="news">
 		<?php include "news.inc.php"; ?>
 	</div>

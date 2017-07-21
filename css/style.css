@@ -83,7 +83,7 @@ h4{
 	vertical-align:top;
 	padding-left:5px;
 	border-left:1px solid #444;
-	border-right:1px solid #444;
+	
 	min-height:720px; 
 
 
@@ -94,13 +94,16 @@ h4{
 	vertical-align:top;
 	padding:0px 0px 0px 5px;
 	border-top:1px solid 4444;
+		border-left:1px solid #444;
+	border-right:1px solid #444;
 	min-height:720px;
+
 }
 #news{
 	width:25%;
 	vertical-align:top;
 	padding-left:5px;
-	border-left:1px solid #444;
+	
 	border-right:1px solid #444;
 	float:right;
 	min-height:720px;
